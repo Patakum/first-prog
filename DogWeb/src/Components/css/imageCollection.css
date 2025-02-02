@@ -1,0 +1,11 @@
+.dogBox {
+    grid-area: dogBox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+
+}

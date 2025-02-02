@@ -1,0 +1,69 @@
+.contain {
+    display: grid;
+    align-content: start;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "header header" "sideBar dogBox";
+}
+
+
+header {
+    height: 180px;
+    grid-area: header;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+    background-color: cadetblue;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+
+        .active {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .active:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid gray;
+            transition: 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.sidebar {
+    grid-area: sideBar;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: bisque;
+
+    text-align: start;
+
+    a {
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+        font-size: medium;
+        flex-direction: column;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

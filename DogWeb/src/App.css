@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva,
+    Verdana, sans-serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.navlink {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 1px solid gray; */
+    transition: 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &:visited {}
+}

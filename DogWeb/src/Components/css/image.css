@@ -1,0 +1,30 @@
+.dogImage {
+    img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid bisque;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px bisque;
+        transition: 0.3s ease;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+img:hover+span {
+    transform: scale(1.2);
+}
+
+.like {
+    transform: scale(1.5);
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 1;
+    position: absolute;
+    margin: 10px;
+
+}
