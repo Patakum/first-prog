@@ -16,7 +16,6 @@ function App() {
           <Route path='home' element={<RandomImg />} />
           <Route path=':breed?' element={<BreedImage />} />
           <Route path='favorite' element={<FavoriteImg />} />
-          <Route path='favorites' element={<FavoriteImg />} />
         </Route>
 
         <Route path='child' element={<Child />} />
